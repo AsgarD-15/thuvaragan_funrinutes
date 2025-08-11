@@ -1,0 +1,55 @@
+/* Base */
+:root{
+  --brand-yellow:#ffd247;
+}
+
+body{
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color:#232323;
+}
+
+.brand-box{
+  display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border:2px solid #111;border-radius:6px;font-weight:800;color:#111;
+}
+
+/* Hero */
+.screen{min-height:100vh;display:flex;align-items:center}
+.hero-section{position:relative;min-height:60vh;display:flex;align-items:center;overflow:hidden;background:#1a1f1a}
+.hero-section .hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:brightness(0.55);}
+.hero-section .container{position:relative;z-index:2}
+
+/* Tiles */
+.tile{position:relative;border-radius:12px;overflow:hidden}
+.tile img{display:block;width:100%;height:100%;object-fit:cover}
+.tile .tile-caption{position:absolute;left:0;bottom:0;right:0;padding:12px 14px;color:#fff;background:linear-gradient(180deg,rgba(0,0,0,0) 0%, rgba(0,0,0,.6) 100%)}
+.tile-lg{height:100%}
+
+/* Product cards */
+.product-card .card-img-top{object-fit:cover;height:190px}
+.product-card .btn{background:var(--brand-yellow);border-color:var(--brand-yellow)}
+.product-card .btn:hover{filter:brightness(0.95)}
+
+/* Banners */
+.banner{border-radius:14px;min-height:280px;background-size:cover;background-position:center}
+.banner .btn{background:#fff;border-color:#fff}
+
+/* CTA */
+.cta-section{position:relative;overflow:hidden;background:#101010}
+.cta-section .cta-bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:brightness(0.45)}
+.cta-section .container{position:relative;z-index:2}
+
+/* Footer */
+footer .brand-box{border-color:#fff;color:#fff}
+
+/* Reveal on scroll */
+.reveal{opacity:0;transform:translateY(16px);transition:transform .7s cubic-bezier(.2,.65,.2,1),opacity .7s;transition-delay:var(--reveal-delay,0ms);will-change:transform,opacity}
+.reveal[data-reveal='up']{transform:translateY(16px)}
+.reveal[data-reveal='left']{transform:translateX(-24px)}
+.reveal[data-reveal='right']{transform:translateX(24px)}
+.reveal[data-reveal='zoom']{transform:scale(.96)}
+.reveal.visible{opacity:1;transform:none}
+
+@media (prefers-reduced-motion: reduce){
+  .reveal{transition:none}
+}
+  
