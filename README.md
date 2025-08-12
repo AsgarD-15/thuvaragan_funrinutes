@@ -60,9 +60,9 @@ Contributions are welcome! Please fork the repository and submit a pull request 
 ## Contact
 
 For inquiries, please reach out to:
-- **Name:** Your Name
-- **Email:** your.email@example.com
-- **GitHub:** [Your GitHub Profile](https://github.com/yourusername)
+- **Name:** Asgar
+- **Email:** asgar156d@gmail.com
+- **GitHub:** https://github.com/AsgarD-15
 
 ---
 
